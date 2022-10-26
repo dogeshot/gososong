@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="module" src="/javascripts/fonts.js"></script>
+    <script type="module" src="/javascripts/samples.js"></script>
+    <script type="module" src="/javascripts/goso.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div id="header_logo">Goso N So</div>
+    </div>
+    <div id="content">
+      <ul id="progress-bar">W
+        <li>당사자 정보</li>
+        <li>범죄 정보</li>
+        <li>증거 정보</li>
+        <li>관할 정보</li>
+        <li>완료 !</li>
+      </ul>
+      <div class="field">
+        <h2>당사자 정보 입력</h2>
+        <h4>고소인 정보</h4>
+        <div><input id="p_name" type="text" placeholder="성명"></div>
+        <div><input id="p_address" type="text" placeholder="주소"></div>
+        <div><input id="p_phone" type="text" placeholder="연락처"></div>
+        <div><input id="p_email" type="text" placeholder="이메일"></div>
+        <h4>피고소인 정보</h4>
+        <div><input type="text" placeholder="성명"></div>
+        <div><input type="text" placeholder="주소"></div>
+        <div><input type="text" placeholder="이메일"></div>
+        <div><input type="text" placeholder="연락처"></div>
+        <button class="next">다음</button>
+      </div>
+      <div class="field">
+        <h2>범죄 정보 입력</h2>
+        <h4>고소 취지</h4>
+        <div><input type="text"></div>
+        <h5>고소 취지는 고소하려는 범죄 명을 입력하는 곳입니다. </h5>
+        <button>예시</button>
+        <h4>범죄 사실</h4>
+        <div><textarea></textarea></div>
+        <h5>범죄 사실은 피고소인의 범죄사실을 입력하는 곳입니다. 
+          형법 등 처벌법규에 해당하는 사실에 대하여 일시, 장소, 범행방법, 결과 등을
+          구체적으로 특정하여 기재해야 하며, 고소인이 알고 있는 지식과 경험, 증거에 의해
+          사실로 인정되는 내용을 기재하여야 합니다</h5>
+        <button>예시</button>
+        <h4>고소 이유</h4>
+        <div><textarea></textarea></div>
+        <h5>고소이유에는 피고소인의 범행 경위 및 정황, 고소를 하게 된 동기와 사유
+          등 범죄사실을 뒷받침하는 내용을 간략, 명료하게 기재하여야 합니다.
+        </h5>
+        <button class="prev">이전</button>
+        <button class="next">다음</button>
+      </div>
+      <div class="field">
+        <h2>증거 입력</h2>
+        <h4>고소인 정보</h4>
+        <div><input type="text" placeholder="성명"></div>
+        <div><input type="text" placeholder="주소"></div>
+        <div><input type="text" placeholder="이메일"></div>
+        <div><input type="text" placeholder="연락처"></div>
+        <button class="prev">이전</button>
+        <button class="print">출력</button>
+      </div>
+
+    </div>
+
+    <div id="footer">
+    
+    </div>
+  </body>
+</html>

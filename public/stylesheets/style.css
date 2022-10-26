@@ -1,0 +1,78 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#header{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+#header_logo{
+  font-size: 27px;
+  color:white;
+  float:left;
+}
+
+#content{
+  width: 100%;
+}
+
+#progress-bar{
+  width: 600px;
+  height: 40px;
+}
+
+.field{
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 10px;
+
+  border: 1p solid grey;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+.field:not(:first-of-type) {
+	display: none;
+}
+
+input{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+
+  font-size: 16px;
+
+  width: 90%;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+textarea{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+  resize: vertical;
+
+  font-size: 16px;
+  width:90%;
+  height: 150px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.next, .prev, .download {
+  width: 200px;
+  height: 50px;
+
+  border: 0;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+}
+
